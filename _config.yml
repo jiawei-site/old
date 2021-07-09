@@ -1,1 +1,44 @@
-theme: jekyll-theme-potato-hacker
+author: "Jiawei LIU's Homepage"
+email: "jaway.liu {AT} ${GOOGLE_SUFFIX} "
+description: 
+
+# Useful links
+github_username: "ganler"
+twitter_username: "JWLiu10"
+linkedin_id: "jiawei-liu-079a00197"
+
+# Theme
+theme: jekyll-theme-potato-hacker                 # Uncomment this
+# remote_theme: luxedo/jekyll-theme-potato-hacker   # Or this
+theme_repository: "https://github.com/luxedo/jekyll-theme-potato-hacker"
+theme_base: "dark"       # Theme palette (light | dark)
+theme_switch: on         # Show color switch (on | off)
+
+# Extra settings
+blog: off                 # Show blog tag and post list (on | off)
+avatar: on               # Show avatar (on | off)
+avatar_image: "assets/img/avatar.jpg"
+avatar_description: "So high, so low, so many things to know"
+highlighter_theme: monokai  # Theme of the syntax_highlighter [base16 |
+                            # colorful | github | gruvbox | molokai |
+                            # monokai | pastie | thankful_eyes | tulip ]
+toolbar_priority:        # Order of the items in the toolbar (except for blog and home)
+  - About
+
+# Collections
+collections:
+  dropdown:
+    output: true
+  items:
+    output: true
+
+# Build settings
+excerpt_separator: "<!--more-->"
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+exclude:
+  - Gemfile
+  - Gemfile.lock
