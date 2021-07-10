@@ -790,7 +790,7 @@ address { margin-bottom: 21px; font-style: normal; line-height: 1.428571429; }
 
 code, kbd, pre, samp { font-family: "Source Code Pro", Menlo, Monaco, Consolas, "Courier New", monospace; }
 
-code { padding: 2px 4px; font-size: 90%; color: #bf7e7e; background-color: rgba(210, 210, 210, 0.1); border-radius: 4px; }
+code { padding: 2px 4px; font-size: 90%; color: #bf7e7e; background-color: rgba(210, 210, 210, 0.01); border-radius: 4px; }
 
 kbd { padding: 2px 4px; font-size: 90%; color: #fff; background-color: #333; border-radius: 3px; box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25); }
 
@@ -2476,8 +2476,6 @@ nav:hover { background-color: #000; }
 
 .blog-post { margin-bottom: 5em; }
 
-.highlight, .highlight .w { opacity: 0.9; }
-
 .avatar-image { height: auto; width: auto; max-height: 10em; max-width: 10em; border-radius: 10em; border-style: solid; border-width: medium; border-color: #777777; }
 
 .avatar-description { color: #777777; }
@@ -2485,5 +2483,7 @@ nav:hover { background-color: #000; }
 .hide { display: none; }
 
 .h1-overlay { background: rgba(0, 0, 0, 0.2); position: absolute; width: 100%; z-index: -1; padding: 1em; }
+
+.right-links a i { font-size: 1.5em; color: #555555 !important; }
 
 /*# sourceMappingURL=main-dark.css.map */

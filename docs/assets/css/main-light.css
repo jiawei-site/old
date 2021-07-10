@@ -2476,8 +2476,6 @@ nav:hover { background-color: white; }
 
 .blog-post { margin-bottom: 5em; }
 
-.highlight, .highlight .w { opacity: 0.9; }
-
 .avatar-image { height: auto; width: auto; max-height: 10em; max-width: 10em; border-radius: 10em; border-style: solid; border-width: medium; border-color: #777777; }
 
 .avatar-description { color: #777777; }
@@ -2485,5 +2483,7 @@ nav:hover { background-color: white; }
 .hide { display: none; }
 
 .h1-overlay { background: rgba(255, 255, 255, 0.5); position: absolute; width: 100%; z-index: -1; padding: 1em; }
+
+.right-links a i { font-size: 1.5em; color: #555555 !important; }
 
 /*# sourceMappingURL=main-light.css.map */

@@ -1,4 +1,4 @@
 *.lock
-Gemfile.lock
-_site/
-.jekyll-cache/
+_site
+.jekyll-cache
+.DS_store
