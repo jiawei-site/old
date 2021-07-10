@@ -5,30 +5,30 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Allocate Stuff in the Right Way</title>
-  <meta name="description" content="">
+  <title>Jiawei's Blog</title>
+  <meta name="description" content="Posts on programming and systems">
 
   <!-- Social: Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@JWLiu10">
-  <meta name="twitter:title" content="Allocate Stuff in the Right Way">
-  <meta name="twitter:description" content="">
+  <meta name="twitter:title" content="Jiawei's Blog">
+  <meta name="twitter:description" content="Posts on programming and systems">
   
   <meta property="twitter:image:src" content="/assets/img/opengraph.png">
   
 
   <!-- Social: Facebook / Open Graph -->
-  <meta property="og:url" content="/blog/2021/07/10/alloc-right.html">
-  <meta property="og:title" content="Allocate Stuff in the Right Way">
+  <meta property="og:url" content="/blog.html">
+  <meta property="og:title" content="Jiawei's Blog">
   
   <meta property="og:image" content="/assets/img/opengraph.png">
   
-  <meta property="og:description" content="">
+  <meta property="og:description" content="Posts on programming and systems">
   <meta property="og:site_name" content="">
 
   <!-- Social: Schema.org  -->
-  <meta itemprop="name" content="Allocate Stuff in the Right Way"/>
-  <meta itemprop="description" content="">
+  <meta itemprop="name" content="Jiawei's Blog"/>
+  <meta itemprop="description" content="Posts on programming and systems">
   <meta itemprop="image" content="/assets/img/opengraph.png"/>
 
   <!-- Favicon -->
@@ -150,10 +150,13 @@
           <div class="page-separator visible-xs">
             <h1 class="h1-strip" style="padding-bottom:2em; margin-bottom: 0;"></h1>
           </div>
-          <h1 class="post-title page-title" id="title"><a href="#title">Allocate Stuff in the Right Way</a></h1>
-          <h4 class="post-title"> 2021-07-10 00:07:12 +0800 </h4>
-<article class="blog-post">
-  <p>NOTE: This article is for those who are new to code optimizations. If you have already understood the design rationale of small vectors and SOO (small object optimzation), please ignore this.</p>
+          <h1 class="post-title page-title" id="title"><a href="#title">Jiawei's Blog</a></h1>
+          
+    <a href="/blog/2021/07/10/alloc-right.html">
+      <h1 class="post-title"> Allocate Stuff in the Right Way</h1>
+      <h5 class="post-title"> 2021-07-10 00:07:12 +0800 </h5>
+    </a>
+    <p>NOTE: This article is for those who are new to code optimizations. If you have already understood the design rationale of small vectors and SOO (small object optimzation), please ignore this.</p>
 
 <h2 id="tldr">TL;DR</h2>
 
@@ -216,7 +219,7 @@ main:
 
 <p>Stack memory is also cheap, theoretically (let’s forget program interrupt), only 2 instruction (<code class="language-plaintext highlighter-rouge">push rbp</code> and <code class="language-plaintext highlighter-rouge">mov rbp, rsp</code>) is used to initialize the stack and 1 for “allocating” the stack frame. Since we can simply regard that we have infinite memory towards the direction of stack growth, the allocation is as cheap as moving forward a stack pointer (or statically set its offset in the assembly). The behavior of stack allocation is simply defined during compilation time since it is only relavant to your codes. It is a bit dynamic because the program during runtime can determine which path to enter. Some paths may contain a deep stack while others may not. But anyways, in general, stack allocation is quite cheap because it is also very “static”.</p>
 
-<p>Well, as for “the type of crime”, dynamic allocation is absolutely the user’s (or input’s) call. It is your call to tell when to allocate (e.g., <code class="language-plaintext highlighter-rouge">new</code>) and deallcoate (e.g., <code class="language-plaintext highlighter-rouge">delete</code>). The cost of flexibility is complexity and efficiency. First, <strong>flexibility</strong> makes it possible to <code class="language-plaintext highlighter-rouge">new</code>/<code class="language-plaintext highlighter-rouge">delete</code> anywhere you want, however, it might not be legal or well-formed. You may kill your program out of double free, deallocating a non-exist pointer, memory leak, and many others. To avoid such issues, you finally ask for some help from <em>garbage collection</em>, <em>smart pointer</em>, and many other ownership stuffs, introducing complexity to your codes (tell me the probability of successfully compiling a rust program and how much you love <code class="language-plaintext highlighter-rouge">unsafe</code>) and some performance degradation. Second, everything is a tradeoff and “allocate anywhere” does not come for free. You or the memory allocation library (e.g., <a href="http://jemalloc.net/">jemalloc</a>) you refered to need to carefully maintain one or more logically contiguous buffer(s) to make sure either it allocates fast (monotonic allocator) or long/robust (compact allocator). The actual instructions executed in runtime behind that <code class="language-plaintext highlighter-rouge">call operator new</code> can be dramatic. Usually such mechanisms makes allocation cost unstable, it can be fast when there’s plenty of space left in the pool, but can be extremely slow when you have a huge amount of memory fragments (did you make a lot of small objects allocted with <code class="language-plaintext highlighter-rouge">malloc</code>?). Apart from this, for small objects, stack memory is always more cache-friendly than heap ones since you are always seeing something in the stack (see the example assembly) so that stack memory can be considered always on-cache.</p>
+<p>Well, as for “the type of crime”, dynamic allocation is absolutely the user’s (or input’s) call. It is your call to tell when to allocate (e.g., <code class="language-plaintext highlighter-rouge">new</code>) and deallcoate (e.g., <code class="language-plaintext highlighter-rouge">delete</code>). The cost of flexibility is complexity and efficiency. First, <strong>flexibility</strong> makes it possible to <code class="language-plaintext highlighter-rouge">new</code>/<code class="language-plaintext highlighter-rouge">delete</code> anywhere you want, however, it might not be legal or well-formed. You may kill your program out of double free, deallocating a non-exist pointer, memory leak, and many others. To avoid such issues, you finally ask for some help from <em>garbage collection</em>, <em>smart pointer</em>, and many other ownership stuffs, introducing complexity to your codes (tell me the probability of successfully compiling a rust program and how much you love <code class="language-plaintext highlighter-rouge">unsafe</code>) and some performance degradation. Second, everything is a tradeoff and “allocate anywhere” does not come for free. You or the memory allocation library (e.g., <a href="http://jemalloc.net/">jemalloc</a>) you refered to need to carefully maintain one or more logically contiguous buffer(s) to make sure either it allocates fast (monotonic allocator) or long/robust (compact allocator). The actual instructions executed in runtime behind that <code class="language-plaintext highlighter-rouge">call operator new</code> can be dramatic. Usually such mechanisms makes allocation cost unstable, it can be fast when there’s plenty of space left in the pool, but can be extremely slow when you have a huge amount of memory fragments (did you made a lot of small objects allocted with <code class="language-plaintext highlighter-rouge">malloc</code>?). Apart from this, for small objects, stack memory is always more cache-friendly than heap ones since you are always seeing something in the stack (see the example assembly) so that stack memory can be considered always on-cache.</p>
 
 <p>In a word, dynamic memory is guilty and we should try our best to prevent it if your program is performance-critical (since our compilers at this moment cannot resolve this problem at all).</p>
 
@@ -489,7 +492,10 @@ PushBackSmallVector_BaseSize32       2435 ns         2104 ns       336143
   </li>
 </ul>
 
-</article>
+    
+    <br/>
+    <div style="margin-bottom: 5em;"></div>
+
 
         </div>
         <div class="col-sm-2">
