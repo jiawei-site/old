@@ -4,33 +4,61 @@ title: Jiawei LIU
 description: Jiawei's Home Page
 ---
 
-# About
+## About
 
-##### You can check my CV [here](assets/pdf/jiawei_cv.pdf).
+##### Find my CV [here](assets/pdf/jiawei_cv.pdf).
 
-I'm a research intern at [Alibaba DAMO Academy](https://damo.alibaba.com/?lang=en) and an incoming CS PhD student at [UIUC](https://illinois.edu/) advised by [Lingming Zhang](http://lingming.cs.illinois.edu/). I obtained my B.Eng degree from Tongji University.
+I am a CS PhD student at [UIUC](https://illinois.edu/) advised by [Lingming Zhang](http://lingming.cs.illinois.edu/). I obtained my B.Eng degree from Tongji University.
 
-My primary research goal is to facilitate high-quality software infrastructures: **easy-to-use**, **high-performance** and **reliable**. I have been building general-purpose video analytic frameworks with [Jinyang Li](http://www.news.cs.nyu.edu/~jinyang/) at [NYU System Group](http://news.cs.nyu.edu/). I am also the leading committer of [HyperPose](https://github.com/tensorlayer/hyperpose) (1k stars), a blazing-fast pose estimation framework on GPU (advised by [Luo Mai](https://luomai.github.io/) and [Hao Dong](https://zsdonghao.github.io/)). Previously, I was an intern at [ByteDance](https://www.bytedance.com/en/) [AI Lab](https://ailab.bytedance.com/), developing deep learning model servers.
+My primary research goal is to facilitate high-quality software infrastructures: **easy-to-use**, **high-performance** and **reliable**. I was a research intern at [Alibaba DAMO Academy](https://damo.alibaba.com/?lang=en), scaling distributed computing for large-scale data processing. Prior to that, I have been building general-purpose video analytic frameworks with [Jinyang Li](http://www.news.cs.nyu.edu/~jinyang/) at [NYU System Group](http://news.cs.nyu.edu/). I am also the leading committer of [HyperPose](https://github.com/tensorlayer/hyperpose) (1k stars), a blazing-fast pose estimation framework on GPU (advised by [Luo Mai](https://luomai.github.io/) and [Hao Dong](https://zsdonghao.github.io/)). Previously, I was an intern at [ByteDance](https://www.bytedance.com/en/) [AI Lab](https://ailab.bytedance.com/), developing deep learning model servers.
 
 During my undergraduate study, I have been focusing on high-performance Machine Learning Systems (MLSys) research, including model serving, distributed training, ML-driven video analytics, and ML/RL for systems. I'm also exploring new directions for doing a PhD, e.g., MLSys Reliability.
 
-<div class="alert alert-success" role="alert">
-I'm thrilled to start my PhD journey at UIUC! See you in the cornfield!
-</div>
+## Publication
 
-<div class="alert alert-info" role="alert">
-This is my new personal website! I am deprecating my <a href="https://jw-liu.xyz/">previous website</a> since it was made complicated for graduate school application.
-</div>
+#### **[OOPSLA'22]** Coverage-Guided Tensor Compiler Fuzzing with Joint IR-Pass Mutation (under review)
 
+<u>Jiawei Liu</u>, Yuxiang Wei, Sen Yang, Yinlin Deng, Lingming Zhang. | [code](https://github.com/tensorlayer/hyperpose) (anon. artifact, please don't show your identity to this repo at present)
 
-# Work Experience
+#### **[ACMMM'21 OSC]** Fast and Flexible Human Pose Estimation with HyperPose
+
+Yixiao Guo\*, <u>Jiawei Liu</u>\*, Guo Li\*, Luo Mai, Hao Dong. (to appear) | [arXiv](https://arxiv.org/abs/2108.11826) | [code](https://github.com/tensorlayer/hyperpose)
+
+## Experience
+
+#### PL/FM/SE Group of UIUC
+
+<p style="text-align:left;">
+Research Assistant / PhD Student
+<span style="float:right;">
+    Urbana, IL, US | Aug. 2021 - Present
+</span>
+</p>
 
 #### Alibaba DAMO Academy
 
 <p style="text-align:left;">
 Research Intern
 <span style="float:right;">
-    Shanghai, China | Mar 2021 - Present
+    Shanghai, China | Mar. - Aug. 2021
+</span>
+</p>
+
+#### NYU System Group
+
+<p style="text-align:left;">
+Research Intern
+<span style="float:right;">
+    Remote (COVID-19) | Aug. 2020 - Mar. 2021
+</span>
+</p>
+
+#### HyperPlane Lab of PKU
+
+<p style="text-align:left;">
+Research Intern (part-time)
+<span style="float:right;">
+    Beijing, China | Jan. 2020 - Jun. 2021
 </span>
 </p>
 
@@ -39,15 +67,14 @@ Research Intern
 <p style="text-align:left;">
 Software Engineering Intern
 <span style="float:right;">
-    Beijing, China | Feb - Jul 2020
+    Beijing, China | Feb. - Jul. 2020
 </span>
 </p>
 
-# Misc.
+## Misc.
 
 Digital painting and cooking are my hobbies if coding is not allowed to be taken into account.
-Well, if allowed, I enjoy myself being a language lawyer (though not quite qualified) of modern C++ and reading thick books (sounds quite like a nerd).
-I spent most of my spare time watching (Japanese) anime and all kinds of suspense films, and discussing interesting tech stuff with my friends (who are also some kind of nerds, lol).
+I spent most of my spare time watching (Japanese) anime and all kinds of suspense films, and discussing interesting tech stuff with my friends.
 
 `ganler` is the most commonly used nickname of mine, which is from my favorite animation *デュラララ!! (DURARARA!!)*.
 

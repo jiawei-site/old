@@ -6,6 +6,14 @@ description: Some pictures of Jiawei
 
 # Jiawei's Pictures
 
+### Travelling Gansu and Qinghai Province of China
+
+![](../assets/img/gs-desert.JPG)
+
+![](../assets/img/gs-feicui-lake-stand.JPG)
+
+![](../assets/img/gs-feicui-lake-wrecking-wall.JPG)
+
 ### Germany
 
 ![](../assets/img/jw0.jpg)
