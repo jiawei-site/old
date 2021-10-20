@@ -16,13 +16,15 @@ During my undergraduate study, I have been focusing on high-performance Machine 
 
 ## Publication
 
-#### **[OOPSLA'22]** Coverage-Guided Tensor Compiler Fuzzing with Joint IR-Pass Mutation (under review)
+#### Coverage-Guided Tensor Compiler Fuzzing with Joint IR-Pass Mutation
 
-<u>Jiawei Liu</u>, Yuxiang Wei, Sen Yang, Yinlin Deng, Lingming Zhang. | [code](https://github.com/Tzer-AnonBot/tzer) (anon. artifact, please don't show your identity to this repo at present)
+<u>Jiawei Liu</u>, Yuxiang Wei, Sen Yang, Yinlin Deng, Lingming Zhang. (under review)
 
-#### **[ACMMM'21 OSC]** Fast and Flexible Human Pose Estimation with HyperPose
+#### Fast and Flexible Human Pose Estimation with HyperPose
 
-Yixiao Guo\*, <u>Jiawei Liu</u>\*, Guo Li\*, Luo Mai, Hao Dong. (to appear) | [arXiv](https://arxiv.org/abs/2108.11826) | [code](https://github.com/tensorlayer/hyperpose)
+Yixiao Guo\*, <u>Jiawei Liu</u>\*, Guo Li\*, Luo Mai, Hao Dong. 
+
+*MM '21: Proceedings of the 29th ACM International Conference on Multimedia, October 2021, Pages 3763–3766* [doi](https://dl.acm.org/doi/10.1145/3474085.3478325) \| [arXiv](https://arxiv.org/abs/2108.11826) \| [code](https://github.com/tensorlayer/hyperpose)
 
 ## Experience
 
