@@ -16,9 +16,9 @@ During my undergraduate study, I have been focusing on high-performance Machine 
 
 ## Publication
 
-#### **[OOPSLA'22]** Coverage-Guided Tensor Compiler Fuzzing with Joint IR-Pass Mutation (under review)
+#### Coverage-Guided Tensor Compiler Fuzzing with Joint IR-Pass Mutation (under review)
 
-<u>Jiawei Liu</u>, Yuxiang Wei, Sen Yang, Yinlin Deng, Lingming Zhang. | [code](https://github.com/Tzer-AnonBot/tzer) (anon. artifact, please don't show your identity to this repo at present)
+<u>Jiawei Liu</u>, Yuxiang Wei, Sen Yang, Yinlin Deng, Lingming Zhang.
 
 #### **[ACMMM'21 OSC]** Fast and Flexible Human Pose Estimation with HyperPose
 
