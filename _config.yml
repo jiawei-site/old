@@ -17,7 +17,7 @@ theme_switch: on         # Show color switch (on | off)
 # Extra settings
 blog: on                 # Show blog tag and post list (on | off)
 avatar: on               # Show avatar (on | off)
-avatar_image: "assets/img/avatar.jpg"
+avatar_image: "assets/img/avatar.png"
 avatar_description: "So high, so low, so many things to know"
 highlighter_theme: monokai  # Theme of the syntax_highlighter [base16 |
                             # colorful | github | gruvbox | molokai |

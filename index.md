@@ -8,9 +8,9 @@ description: Jiawei's Home Page
 
 ##### Find my CV [here](assets/pdf/jiawei_cv.pdf).
 
-I am a CS PhD student at [UIUC](https://illinois.edu/) advised by [Lingming Zhang](http://lingming.cs.illinois.edu/). I obtained my B.Eng degree from Tongji University.
+I am a 1st-year CS PhD student at [UIUC](https://illinois.edu/) advised by [Lingming Zhang](http://lingming.cs.illinois.edu/). I obtained my B.Eng degree from Tongji University.
 
-My primary research goal is to facilitate high-quality software infrastructures: **easy-to-use**, **high-performance** and **reliable**. I was a research intern at [Alibaba DAMO Academy](https://damo.alibaba.com/?lang=en), scaling distributed computing for large-scale data processing. Prior to that, I have been building general-purpose video analytic frameworks with [Jinyang Li](http://www.news.cs.nyu.edu/~jinyang/) at [NYU System Group](http://news.cs.nyu.edu/). I am also the leading committer of [HyperPose](https://github.com/tensorlayer/hyperpose) (1k stars), a blazing-fast pose estimation framework on GPU (advised by [Luo Mai](https://luomai.github.io/) and [Hao Dong](https://zsdonghao.github.io/)). Previously, I was an intern at [ByteDance](https://www.bytedance.com/en/) [AI Lab](https://ailab.bytedance.com/), developing deep learning model servers.
+My primary research goal is to make future software infrastructures: **easy-to-use**, **high-performance** and **reliable**. I was a research intern at [Alibaba DAMO Academy](https://damo.alibaba.com/?lang=en), scaling distributed computing for large-scale data processing. Prior to that, I have been building general-purpose video analytic frameworks with [Jinyang Li](http://www.news.cs.nyu.edu/~jinyang/) at [NYU System Group](http://news.cs.nyu.edu/). I am also the leading committer of [HyperPose](https://github.com/tensorlayer/hyperpose) (1k stars), a blazing-fast pose estimation framework on GPU (advised by [Luo Mai](https://luomai.github.io/) and [Hao Dong](https://zsdonghao.github.io/)). Previously, I was an intern at [ByteDance](https://www.bytedance.com/en/) [AI Lab](https://ailab.bytedance.com/), developing deep learning model servers.
 
 During my undergraduate study, I have been focusing on high-performance Machine Learning Systems (MLSys) research, including model serving, distributed training, ML-driven video analytics, and ML/RL for systems. I'm also exploring new directions for doing a PhD, e.g., MLSys Reliability.
 
@@ -18,13 +18,15 @@ During my undergraduate study, I have been focusing on high-performance Machine 
 
 #### Coverage-Guided Tensor Compiler Fuzzing with Joint IR-Pass Mutation
 
-<u>Jiawei Liu</u>, Yuxiang Wei, Sen Yang, Yinlin Deng, Lingming Zhang. (under review)
+<u>Jiawei Liu</u>, Yuxiang Wei, Sen Yang, Yinlin Deng, Lingming Zhang
+
+[OOPSLA '22](https://2022.splashcon.org/track/splash-2022-oopsla): *Proceedings of the ACM SIGPLAN Conference on Object-Oriented Programming Systems, Languages, and Applications (to appear)*
 
 #### Fast and Flexible Human Pose Estimation with HyperPose
 
 Yixiao Guo\*, <u>Jiawei Liu</u>\*, Guo Li\*, Luo Mai, Hao Dong. 
 
-*MM '21: Proceedings of the 29th ACM International Conference on Multimedia, October 2021, Pages 3763–3766* [doi](https://dl.acm.org/doi/10.1145/3474085.3478325) \| [arXiv](https://arxiv.org/abs/2108.11826) \| [code](https://github.com/tensorlayer/hyperpose)
+[MM' 21 (OSC)](https://2021.acmmm.org/): *Proceedings of the 29th ACM International Conference on Multimedia, October 2021, Pages 3763–3766* [doi](https://dl.acm.org/doi/10.1145/3474085.3478325) \| [arXiv](https://arxiv.org/abs/2108.11826) \| [code](https://github.com/tensorlayer/hyperpose)
 
 ## Experience
 
